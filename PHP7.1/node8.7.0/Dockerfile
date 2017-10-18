@@ -1,4 +1,4 @@
-FROM php:7.1.10-cli-alpine
+FROM giacomofurlan/php:7.1-alpine
 
 ARG NODE_VERSION=8.7.0
 
