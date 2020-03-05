@@ -29,7 +29,4 @@ RUN npm install -g bower
 # Gulp
 RUN npm install -g gulp-cli
 
-# Cypress
-RUN npm install -g cypress
-
 CMD ["bash"]
