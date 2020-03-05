@@ -1,4 +1,4 @@
-FROM php:7.1.8-apache
+FROM php:7.1.10-alpine
 
 ARG NODE_VERSION=10.19.0
 
