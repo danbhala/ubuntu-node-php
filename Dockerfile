@@ -23,6 +23,9 @@ RUN rm -rf /tmp/*
 # Yarn
 RUN npm install -g yarn
 
+# Bower
+RUN npm install -g bower
+
 # Gulp
 RUN npm install -g gulp-cli
 
