@@ -5,6 +5,11 @@ ARG NODE_VERSION=10.19.0
 LABEL php_version=7.1.10
 LABEL node_version=$NODE_VERSION
 
+# install git
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
+
 RUN apk add --no-cache \
   bash coreutils tar \
   make gcc g++ python \
