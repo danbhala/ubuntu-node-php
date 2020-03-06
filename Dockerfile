@@ -5,16 +5,13 @@ ARG NODE_VERSION=10.19.0
 LABEL php_version=7.1.10
 LABEL node_version=$NODE_VERSION
 
-# install git
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y git
 
 RUN apk add --no-cache \
   bash coreutils tar \
   make gcc g++ python \
   linux-headers binutils-gold \
-  gnupg libstdc++
+  gnupg libstdc++ \
+  git
 
 RUN cd /tmp \
   && curl https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz > nodejs-src.tar.gz \
