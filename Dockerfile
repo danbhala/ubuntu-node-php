@@ -1,5 +1,7 @@
 FROM ubuntu:19.04
 
+DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && \
   apt-get install -y apt-transport-https curl php libapache2-mod-php
 
