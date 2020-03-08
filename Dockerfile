@@ -11,7 +11,8 @@ RUN apk add --no-cache \
   make gcc g++ python \
   linux-headers binutils-gold \
   gnupg libstdc++ \
-  git
+  git libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+
 
 RUN cd /tmp \
   && curl https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz > nodejs-src.tar.gz \
